@@ -7,7 +7,7 @@ Es una servicio que te permite crear un usuario en la base de datos h2.
 El servicio se encuentra en un repositorio bitbucket publico en la rama master, para clonar el proyecto debes utilizar el siguiente comando:
 
 ```bash
-git clone https://Aleinad25@bitbucket.org/Aleinad25/ms-user-generator-cl.git
+git clone https://github.com/aleinad25/ms-user-generator-cl.git
 ```
 
 ## Ejecución del proyecto
