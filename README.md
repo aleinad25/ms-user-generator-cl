@@ -20,12 +20,12 @@ gradle bootRun
 
 El proyecto cuenta con dos operaciones HTTP
 ```bash
-POST  http://localhost:8080/register - Descripción: Crea el usuario.
+POST  http://localhost:8080/createUser - Descripción: Crea el usuario.
 
 RequestBody:
 {
 	"name": "daniela mallea",
-	"email": "daniemallea3@gmaill.com",
+	"email": "daniemallea3@gmail.com",
 	"password": "Contrasena123",
 	"phones":[
 		{
