@@ -2,10 +2,10 @@ package com.globallogic.demo.app.msusergenerator.common;
 
 public class EmailFormatException extends RuntimeException {
 	public EmailFormatException() {
-		super("Invalid email please enter data again");
+		super("Correo no valido, favor ingresar nuevamente.");
 	}
 
 	public EmailFormatException(String message) {
-		super("Invalid "+ message);
+		super("Invalido "+ message);
 	}
 }

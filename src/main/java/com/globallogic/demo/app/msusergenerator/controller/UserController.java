@@ -24,7 +24,7 @@ public class UserController {
         this.createUser = createUser; 
     }
 
-    @PostMapping(value = "/createUser")
+    @PostMapping(value = "/users")
     public ResponseEntity<UserDataResponse> createUser(@Valid @RequestBody(required = false) User user){
          if(createUser.findByEmail(user.getEmail())) {
              return new ResponseEntity(new UserApiResponse(false, "El correo ya se encuentra registrado."),

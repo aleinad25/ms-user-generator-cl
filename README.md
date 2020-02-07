@@ -20,7 +20,7 @@ gradle bootRun
 
 El proyecto cuenta con dos operaciones HTTP
 ```bash
-POST  http://localhost:8080/createUser - Descripción: Crea el usuario.
+POST  http://localhost:8080/users - Descripción: Crea el usuario.
 
 RequestBody:
 {
@@ -37,7 +37,7 @@ RequestBody:
 	]
 }
 
-POST  http://localhost:8008/login    - Descripción: Genera un jwt token en el header.
+POST  http://localhost:8080/login    - Descripción: Genera un jwt token en el header.
 RequestBody
 {
 	"name": "daniela mallea",
