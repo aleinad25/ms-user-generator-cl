@@ -2,15 +2,13 @@ package com.globallogic.demo.app.msusergenerator.controller;
 
 import com.globallogic.demo.app.msusergenerator.domain.entity.User;
 import com.globallogic.demo.app.msusergenerator.domain.entity.UserDataResponse;
-import com.globallogic.demo.app.msusergenerator.domain.entity.UserInfo;
 import com.globallogic.demo.app.msusergenerator.usecase.CreateUser;
-import java.util.UUID;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.ResponseEntity;
 
 import static com.globallogic.demo.app.msusergenerator.stub.stubUser.createDataResponseStub;
@@ -18,7 +16,7 @@ import static com.globallogic.demo.app.msusergenerator.stub.stubUser.createUserS
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.when;
 
-@SpringBootTest
+@ExtendWith(MockitoExtension.class)
 class UserControllerTest {
 
 	@Mock
@@ -39,5 +37,4 @@ class UserControllerTest {
 		ResponseEntity<UserDataResponse> user1 = userController.createUser(user);
 		assertNotNull(user1);
 	}
-
 }
